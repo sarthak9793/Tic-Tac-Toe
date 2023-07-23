@@ -23,8 +23,8 @@ export default function Board(){
         setCurrPlayer(1)
     }
     return(
-        <div>
-            <div className="mx-auto text-4xl text-center mb-6 bg-custom-text-bg-color w-64 p-2 rounded-md">
+        <div className="mt-7">
+            <div className="mx-auto text-4xl text-center mb-40 bg-custom-text-bg-color w-64 p-2 rounded-md">
                 Move: Player {currPlayer===1 ? "1" : "2"}
             </div>
             <div className="h-[400px] w-[400px] grid grid-cols-3 grid-rows-3 mx-auto">
