@@ -27,7 +27,7 @@ export default function Board(){
             <div className="mx-auto text-4xl text-center mb-24 bg-custom-text-bg-color w-64 p-2 rounded-md">
                 Move: Player {currPlayer===1 ? "1" : "2"}
             </div>
-            <div className="h-[400px] w-[400px] grid grid-cols-3 grid-rows-3 mx-auto">
+            <div className="h-[400px] w-[400px] md:h-[600px] md:w-[600px] grid grid-cols-3 grid-rows-3 mx-auto">
                 {moves.map((move,index)=>(<Box key={index} index={index} move={move} updateBoard={updateBoard}/>))}
             </div>
             <div className="mx-auto text-4xl text-center mt-4">
