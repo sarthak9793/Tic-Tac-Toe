@@ -24,17 +24,17 @@ export default function Board(){
     }
     return(
         <div>
-            <div className="mx-auto text-4xl text-center mb-6 text-bla bg-custom-text-bg-color w-64 p-2 rounded-md">
+            <div className="mx-auto text-4xl text-center mb-6 bg-custom-text-bg-color w-64 p-2 rounded-md">
                 Move: Player {currPlayer===1 ? "1" : "2"}
             </div>
             <div className="h-[400px] w-[400px] grid grid-cols-3 grid-rows-3 mx-auto">
                 {moves.map((move,index)=>(<Box key={index} index={index} move={move} updateBoard={updateBoard}/>))}
             </div>
             <div className="mx-auto text-4xl text-center mt-4">
-                {isWinner && <div>Player {isWinner==="X" ? "1" : "2"} Won</div>}
+                {isWinner && <div className="bg-custom-won-color w-64 p-2 rounded-md mx-auto">Player {isWinner==="X" ? "1" : "2"} Won</div>}
             </div>
             <div className="mx-auto text-4xl text-center mt-4">
-                {!isWinner && isFull(moves) && <div>Draw</div>}
+                {!isWinner && isFull(moves) && <div className="bg-custom-won-color w-36 p-2 rounded-md mx-auto">Draw</div>}
             </div>
             <div className="mx-auto text-2xl text-center mt-6">
                 <button onClick={handleReset} className="bg-yellow-50">New Game</button>

@@ -9,7 +9,8 @@ export default {
       colors: {
         "custom-board-bg-color": "rgba(20, 189, 172,0.8)",
         "custom-bg-color": "#ffdfba",
-        "custom-text-bg-color": "rgba(203, 213, 225,0.8)"
+        "custom-text-bg-color": "rgba(203, 213, 225,0.8)",
+        "custom-won-color": "rgba(255, 155, 155,0.8)"
       }
     },
   },
