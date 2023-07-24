@@ -1,3 +1,3 @@
 # Tic Tac Toe
 
-Tic Tac Toe game created using react
+https://sarthak9793.github.io/Tic-Tac-Toe/
